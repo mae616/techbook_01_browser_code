@@ -1,27 +1,39 @@
 body {
-    font-family: sans-serif;
+    font-family: "MS PGothic", "Hiragino Kaku Gothic Pro", sans-serif;
     text-align: center;
-    background: #f0f8ff;
-}
-
-#game {
+    background-color: #e0f7ff; /* 青系 */
+    color: #003366;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  h1 {
+    color: #0066cc;
+    text-shadow: 1px 1px 1px #99ccff;
+    font-size: 32px;
+  }
+  
+  #game {
     display: grid;
     grid-template-columns: repeat(3, 100px);
-    gap: 10px;
+    gap: 12px;
     justify-content: center;
-    margin-top: 50px;
-}
-
-.hole {
+    margin-top: 30px;
+  }
+  
+  .hole {
     width: 100px;
     height: 100px;
-    background: #ccc;
-    border: 2px solid #666;
+    background: #ccf2ff;
+    border: 3px dotted #66ccff;
     border-radius: 50%;
     position: relative;
-}
-
-.mole {
+    box-shadow: inset 0 0 10px #aaa;
+    cursor: pointer;
+  }
+  
+  .mole {
     width: 80px;
     height: 80px;
     background: brown;
@@ -30,8 +42,26 @@ body {
     top: 10px;
     left: 10px;
     display: none;
-}
-
-.mole.show {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .mole.show {
     display: block;
-}
+  }
+  
+  #hitEffect {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #ff0033;
+    font-size: 1.1em;
+    transition: opacity 0.2s;
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+
+  body.flash {
+    background-color: #ffffff;
+    transition: background-color 0.1s;
+  }
