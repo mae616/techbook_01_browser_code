@@ -7,61 +7,59 @@ body {
     padding: 20px;
     transition: background-color 0.3s;
   }
-  
-  h1 {
-    color: #0066cc;
-    text-shadow: 1px 1px 1px #99ccff;
-    font-size: 32px;
-  }
-  
-  #game {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    gap: 12px;
-    justify-content: center;
-    margin-top: 30px;
-  }
-  
-  .hole {
-    width: 100px;
-    height: 100px;
-    background: #ccf2ff;
-    border: 3px dotted #66ccff;
-    border-radius: 50%;
-    position: relative;
-    box-shadow: inset 0 0 10px #aaa;
-    cursor: pointer;
-  }
-  
-  .mole {
-    width: 80px;
-    height: 80px;
-    background: brown;
-    border-radius: 50%;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    display: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  }
-  
-  .mole.show {
-    display: block;
-  }
-  
-  #hitEffect {
-    margin-left: 10px;
-    font-weight: bold;
-    color: #ff0033;
-    font-size: 1.1em;
-    transition: opacity 0.2s;
-  }
-  
-  .hidden {
-    opacity: 0;
-  }
 
-  body.flash {
-    background-color: #ffffff;
-    transition: background-color 0.1s;
-  }
+h1 {
+  color: #0066cc;
+  text-shadow: 1px 1px 1px #99ccff;
+  font-size: 32px;
+}
+
+#game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 12px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.hole {
+  width: 100px;
+  height: 100px;
+  background: #ccf2ff;
+  border: 3px dotted #66ccff;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: inset 0 0 10px #aaa;
+  cursor: pointer;
+}
+
+.mole {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: none;
+  cursor: pointer;
+}
+
+.mole.show {
+  display: block;
+}
+
+#hitEffect {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #ff0033;
+  font-size: 1.1em;
+  transition: opacity 0.2s;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+body.flash {
+  background-color: #ffffff;
+  transition: background-color 0.1s;
+}
